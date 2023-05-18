@@ -7,6 +7,7 @@ sudo apt-get update && export DEBIAN_FRONTEND=noninteractive \
 && sudo apt-get install -y tezos-client \
 && wget https://gitlab.com/functori/dev/factori/-/snippets/2509259/raw/main/factori.sh -O factori \
 && chmod +x factori \
-&& sudo mv factori /usr/bin/
+&& sudo mv factori /usr/bin/ \
+&& docker pull registry.gitlab.com/functori/dev/factori:latest
 
 
